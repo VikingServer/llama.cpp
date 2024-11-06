@@ -1,0 +1,1 @@
+/usr/bin/c++ -O3 -DNDEBUG "CMakeFiles/llama-lookup-create.dir/lookup-create.cpp.o" -o ../../bin/llama-lookup-create  -Wl,-rpath,/mnt/c/Users/sviridov/Test/llama.cpp/src:/mnt/c/Users/sviridov/Test/llama.cpp/ggml/src: ../../common/libcommon.a ../../src/libllama.so ../../ggml/src/libggml.so 
