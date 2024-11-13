@@ -2387,29 +2387,6 @@
       "sastId": ""
     },
     {
-      "code": "V008",
-      "cwe": 0,
-      "falseAlarm": false,
-      "favorite": false,
-      "level": 0,
-      "message": "Unable to start the analysis on this file.",
-      "positions": [
-        {
-          "endLine": 1,
-          "file": "/mnt/c/Users/sviridov/Test/llama.cpp/examples/simple/simple.cpp",
-          "line": 1,
-          "navigation": {
-            "columns": 0,
-            "currentLine": 0,
-            "nextLine": 0,
-            "previousLine": 0
-          }
-        }
-      ],
-      "projects": [],
-      "sastId": ""
-    },
-    {
       "code": "V547",
       "cwe": 570,
       "falseAlarm": false,
@@ -4502,66 +4479,781 @@
       "sastId": ""
     },
     {
-      "code": "V008",
-      "cwe": 0,
+      "code": "V557",
+      "cwe": 125,
       "falseAlarm": false,
       "favorite": false,
-      "level": 0,
-      "message": "Unable to start the analysis on this file.",
+      "level": 1,
+      "message": "Array overrun is possible. The 'input_offset' index is pointing beyond array bound.",
       "positions": [
         {
-          "endLine": 1,
-          "file": "/mnt/c/Users/sviridov/Test/llama.cpp/src/llama-grammar.cpp",
-          "line": 1,
-          "navigation": {
-            "columns": 0,
-            "currentLine": 0,
-            "nextLine": 0,
-            "previousLine": 0
-          }
-        }
-      ],
-      "projects": [],
-      "sastId": ""
-    },
-    {
-      "code": "V008",
-      "cwe": 0,
-      "falseAlarm": false,
-      "favorite": false,
-      "level": 0,
-      "message": "Unable to start the analysis on this file.",
-      "positions": [
-        {
-          "endLine": 1,
-          "file": "/mnt/c/Users/sviridov/Test/llama.cpp/src/llama-sampling.cpp",
-          "line": 1,
-          "navigation": {
-            "columns": 0,
-            "currentLine": 0,
-            "nextLine": 0,
-            "previousLine": 0
-          }
-        }
-      ],
-      "projects": [],
-      "sastId": ""
-    },
-    {
-      "code": "V008",
-      "cwe": 0,
-      "falseAlarm": false,
-      "favorite": false,
-      "level": 0,
-      "message": "Unable to start the analysis on this file.",
-      "positions": [
-        {
-          "endLine": 1,
+          "endLine": 1071,
           "file": "/mnt/c/Users/sviridov/Test/llama.cpp/src/llama-vocab.cpp",
-          "line": 1,
+          "line": 1071,
           "navigation": {
             "columns": 0,
-            "currentLine": 0,
+            "currentLine": -1743220233,
+            "nextLine": 125,
+            "previousLine": 1092270347
+          }
+        }
+      ],
+      "projects": [],
+      "sastId": "CERT-ARR30-C"
+    },
+    {
+      "code": "V1037",
+      "cwe": 691,
+      "falseAlarm": false,
+      "favorite": false,
+      "level": 2,
+      "message": "Two or more case-branches perform the same actions. Check lines: 374, 384, 450",
+      "positions": [
+        {
+          "endLine": 374,
+          "file": "/mnt/c/Users/sviridov/Test/llama.cpp/src/llama-vocab.cpp",
+          "line": 374,
+          "navigation": {
+            "columns": 0,
+            "currentLine": 334493,
+            "nextLine": -1828658203,
+            "previousLine": 1434829570
+          }
+        },
+        {
+          "endLine": 384,
+          "file": "/mnt/c/Users/sviridov/Test/llama.cpp/src/llama-vocab.cpp",
+          "line": 384
+        },
+        {
+          "endLine": 450,
+          "file": "/mnt/c/Users/sviridov/Test/llama.cpp/src/llama-vocab.cpp",
+          "line": 450
+        }
+      ],
+      "projects": [],
+      "sastId": ""
+    },
+    {
+      "code": "V1048",
+      "cwe": 1164,
+      "falseAlarm": false,
+      "favorite": false,
+      "level": 2,
+      "message": "The 'is_prev_special' variable was assigned the same value.",
+      "positions": [
+        {
+          "endLine": 1465,
+          "file": "/mnt/c/Users/sviridov/Test/llama.cpp/src/llama-vocab.cpp",
+          "line": 1465,
+          "navigation": {
+            "columns": 0,
+            "currentLine": 80167637,
+            "nextLine": 125,
+            "previousLine": 1156278397
+          }
+        }
+      ],
+      "projects": [],
+      "sastId": ""
+    },
+    {
+      "code": "V547",
+      "cwe": 571,
+      "falseAlarm": false,
+      "favorite": false,
+      "level": 1,
+      "message": "Expression 'vocab.type == LLAMA_VOCAB_TYPE_RWKV' is always true.",
+      "positions": [
+        {
+          "endLine": 6432,
+          "file": "/mnt/c/Users/sviridov/Test/llama.cpp/srcSym/llama.cpp",
+          "line": 6432,
+          "navigation": {
+            "columns": 0,
+            "currentLine": 2091731668,
+            "nextLine": -1425466383,
+            "previousLine": 927576592
+          }
+        }
+      ],
+      "projects": [],
+      "sastId": ""
+    },
+    {
+      "code": "V547",
+      "cwe": 571,
+      "falseAlarm": false,
+      "favorite": false,
+      "level": 1,
+      "message": "Expression 'o.tag == LLAMA_KV_OVERRIDE_TYPE_STR' is always true.",
+      "positions": [
+        {
+          "endLine": 18477,
+          "file": "/mnt/c/Users/sviridov/Test/llama.cpp/srcSym/llama.cpp",
+          "line": 18477,
+          "navigation": {
+            "columns": 0,
+            "currentLine": -1755379669,
+            "nextLine": 542746516,
+            "previousLine": 1085298624
+          }
+        }
+      ],
+      "projects": [],
+      "sastId": ""
+    },
+    {
+      "code": "V506",
+      "cwe": 562,
+      "falseAlarm": false,
+      "favorite": false,
+      "level": 2,
+      "message": "Pointer to local variable 'read_data' is stored outside the scope of this variable. Such a pointer will become invalid.",
+      "positions": [
+        {
+          "endLine": 18600,
+          "file": "/mnt/c/Users/sviridov/Test/llama.cpp/srcSym/llama.cpp",
+          "line": 18600,
+          "navigation": {
+            "columns": 0,
+            "currentLine": -778200149,
+            "nextLine": 125,
+            "previousLine": 125
+          }
+        }
+      ],
+      "projects": [],
+      "sastId": "CERT-DCL30-C"
+    },
+    {
+      "code": "V522",
+      "cwe": 690,
+      "falseAlarm": false,
+      "favorite": false,
+      "level": 2,
+      "message": "There might be dereferencing of a potential null pointer 'batch.seq_id'. Check lines: 21197, 21195.",
+      "positions": [
+        {
+          "endLine": 21197,
+          "file": "/mnt/c/Users/sviridov/Test/llama.cpp/srcSym/llama.cpp",
+          "line": 21197,
+          "navigation": {
+            "columns": 0,
+            "currentLine": 488674784,
+            "nextLine": 125,
+            "previousLine": -980495863
+          }
+        },
+        {
+          "endLine": 21195,
+          "file": "/mnt/c/Users/sviridov/Test/llama.cpp/srcSym/llama.cpp",
+          "line": 21195
+        }
+      ],
+      "projects": [],
+      "sastId": "CERT-MEM52-CPP"
+    },
+    {
+      "code": "V547",
+      "cwe": 571,
+      "falseAlarm": false,
+      "favorite": false,
+      "level": 2,
+      "message": "Expression 'buft == nullptr' is always true.",
+      "positions": [
+        {
+          "endLine": 3486,
+          "file": "/mnt/c/Users/sviridov/Test/llama.cpp/srcSym/llama.cpp",
+          "line": 3486,
+          "navigation": {
+            "columns": 0,
+            "currentLine": 11741505,
+            "nextLine": -1106415660,
+            "previousLine": 0
+          }
+        }
+      ],
+      "projects": [],
+      "sastId": ""
+    },
+    {
+      "code": "V547",
+      "cwe": 571,
+      "falseAlarm": false,
+      "favorite": false,
+      "level": 2,
+      "message": "Expression 'imatrix_data' is always true.",
+      "positions": [
+        {
+          "endLine": 18440,
+          "file": "/mnt/c/Users/sviridov/Test/llama.cpp/srcSym/llama.cpp",
+          "line": 18440,
+          "navigation": {
+            "columns": 0,
+            "currentLine": 5867101,
+            "nextLine": -1214180054,
+            "previousLine": -2093428712
+          }
+        }
+      ],
+      "projects": [],
+      "sastId": ""
+    },
+    {
+      "code": "V560",
+      "cwe": 571,
+      "falseAlarm": false,
+      "favorite": false,
+      "level": 2,
+      "message": "A part of conditional expression is always true.",
+      "positions": [
+        {
+          "endLine": 6724,
+          "file": "/mnt/c/Users/sviridov/Test/llama.cpp/srcSym/llama.cpp",
+          "line": 6724,
+          "navigation": {
+            "columns": 0,
+            "currentLine": 493203585,
+            "nextLine": -228493237,
+            "previousLine": 0
+          }
+        }
+      ],
+      "projects": [],
+      "sastId": ""
+    },
+    {
+      "code": "V581",
+      "cwe": 670,
+      "falseAlarm": false,
+      "favorite": false,
+      "level": 2,
+      "message": "The conditional expressions of the 'if' statements situated alongside each other are identical. Check lines: 9452, 9456.",
+      "positions": [
+        {
+          "endLine": 9456,
+          "file": "/mnt/c/Users/sviridov/Test/llama.cpp/srcSym/llama.cpp",
+          "line": 9456,
+          "navigation": {
+            "columns": 0,
+            "currentLine": 90777,
+            "nextLine": 1877698269,
+            "previousLine": 0
+          }
+        },
+        {
+          "endLine": 9452,
+          "file": "/mnt/c/Users/sviridov/Test/llama.cpp/srcSym/llama.cpp",
+          "line": 9452
+        }
+      ],
+      "projects": [],
+      "sastId": ""
+    },
+    {
+      "code": "V581",
+      "cwe": 670,
+      "falseAlarm": false,
+      "favorite": false,
+      "level": 2,
+      "message": "The conditional expressions of the 'if' statements situated alongside each other are identical. Check lines: 9689, 9693.",
+      "positions": [
+        {
+          "endLine": 9693,
+          "file": "/mnt/c/Users/sviridov/Test/llama.cpp/srcSym/llama.cpp",
+          "line": 9693,
+          "navigation": {
+            "columns": 0,
+            "currentLine": 23369,
+            "nextLine": 469424648,
+            "previousLine": 0
+          }
+        },
+        {
+          "endLine": 9689,
+          "file": "/mnt/c/Users/sviridov/Test/llama.cpp/srcSym/llama.cpp",
+          "line": 9689
+        }
+      ],
+      "projects": [],
+      "sastId": ""
+    },
+    {
+      "code": "V688",
+      "cwe": 0,
+      "falseAlarm": false,
+      "favorite": false,
+      "level": 2,
+      "message": "The 'seq' function argument possesses the same name as one of the class members, which can result in a confusion.",
+      "positions": [
+        {
+          "endLine": 3009,
+          "file": "/mnt/c/Users/sviridov/Test/llama.cpp/srcSym/llama.cpp",
+          "line": 3009,
+          "navigation": {
+            "columns": 0,
+            "currentLine": -1748340948,
+            "nextLine": -1051588350,
+            "previousLine": 0
+          }
+        }
+      ],
+      "projects": [],
+      "sastId": "CERT-DCL01-C"
+    },
+    {
+      "code": "V688",
+      "cwe": 0,
+      "falseAlarm": false,
+      "favorite": false,
+      "level": 2,
+      "message": "The 'use_mmap' function argument possesses the same name as one of the class members, which can result in a confusion.",
+      "positions": [
+        {
+          "endLine": 4398,
+          "file": "/mnt/c/Users/sviridov/Test/llama.cpp/srcSym/llama.cpp",
+          "line": 4398,
+          "navigation": {
+            "columns": 0,
+            "currentLine": -1197766454,
+            "nextLine": 74519,
+            "previousLine": 0
+          }
+        }
+      ],
+      "projects": [],
+      "sastId": "CERT-DCL01-C"
+    },
+    {
+      "code": "V688",
+      "cwe": 0,
+      "falseAlarm": false,
+      "favorite": false,
+      "level": 2,
+      "message": "The 'n_tokens' local variable possesses the same name as one of the class members, which can result in a confusion.",
+      "positions": [
+        {
+          "endLine": 10509,
+          "file": "/mnt/c/Users/sviridov/Test/llama.cpp/srcSym/llama.cpp",
+          "line": 10509,
+          "navigation": {
+            "columns": 0,
+            "currentLine": 1893209484,
+            "nextLine": 0,
+            "previousLine": -1560262410
+          }
+        }
+      ],
+      "projects": [],
+      "sastId": "CERT-DCL01-C"
+    },
+    {
+      "code": "V688",
+      "cwe": 0,
+      "falseAlarm": false,
+      "favorite": false,
+      "level": 2,
+      "message": "The 'n_tokens' local variable possesses the same name as one of the class members, which can result in a confusion.",
+      "positions": [
+        {
+          "endLine": 11010,
+          "file": "/mnt/c/Users/sviridov/Test/llama.cpp/srcSym/llama.cpp",
+          "line": 11010,
+          "navigation": {
+            "columns": 0,
+            "currentLine": 1893209484,
+            "nextLine": 0,
+            "previousLine": -1560262410
+          }
+        }
+      ],
+      "projects": [],
+      "sastId": "CERT-DCL01-C"
+    },
+    {
+      "code": "V688",
+      "cwe": 0,
+      "falseAlarm": false,
+      "favorite": false,
+      "level": 2,
+      "message": "The 'n_tokens' local variable possesses the same name as one of the class members, which can result in a confusion.",
+      "positions": [
+        {
+          "endLine": 11167,
+          "file": "/mnt/c/Users/sviridov/Test/llama.cpp/srcSym/llama.cpp",
+          "line": 11167,
+          "navigation": {
+            "columns": 0,
+            "currentLine": 1893209484,
+            "nextLine": 0,
+            "previousLine": -1560262410
+          }
+        }
+      ],
+      "projects": [],
+      "sastId": "CERT-DCL01-C"
+    },
+    {
+      "code": "V688",
+      "cwe": 0,
+      "falseAlarm": false,
+      "favorite": false,
+      "level": 2,
+      "message": "The 'n_tokens' local variable possesses the same name as one of the class members, which can result in a confusion.",
+      "positions": [
+        {
+          "endLine": 12300,
+          "file": "/mnt/c/Users/sviridov/Test/llama.cpp/srcSym/llama.cpp",
+          "line": 12300,
+          "navigation": {
+            "columns": 0,
+            "currentLine": 1893209484,
+            "nextLine": 0,
+            "previousLine": -1560262410
+          }
+        }
+      ],
+      "projects": [],
+      "sastId": "CERT-DCL01-C"
+    },
+    {
+      "code": "V688",
+      "cwe": 0,
+      "falseAlarm": false,
+      "favorite": false,
+      "level": 2,
+      "message": "The 'n_embd' local variable possesses the same name as one of the class members, which can result in a confusion.",
+      "positions": [
+        {
+          "endLine": 13257,
+          "file": "/mnt/c/Users/sviridov/Test/llama.cpp/srcSym/llama.cpp",
+          "line": 13257,
+          "navigation": {
+            "columns": 0,
+            "currentLine": 276967083,
+            "nextLine": -1104110397,
+            "previousLine": 0
+          }
+        }
+      ],
+      "projects": [],
+      "sastId": "CERT-DCL01-C"
+    },
+    {
+      "code": "V688",
+      "cwe": 0,
+      "falseAlarm": false,
+      "favorite": false,
+      "level": 2,
+      "message": "The 'n_embd_head_k' local variable possesses the same name as one of the class members, which can result in a confusion.",
+      "positions": [
+        {
+          "endLine": 13606,
+          "file": "/mnt/c/Users/sviridov/Test/llama.cpp/srcSym/llama.cpp",
+          "line": 13606,
+          "navigation": {
+            "columns": 0,
+            "currentLine": 1773483437,
+            "nextLine": 0,
+            "previousLine": 0
+          }
+        }
+      ],
+      "projects": [],
+      "sastId": "CERT-DCL01-C"
+    },
+    {
+      "code": "V688",
+      "cwe": 0,
+      "falseAlarm": false,
+      "favorite": false,
+      "level": 2,
+      "message": "The 'n_embd_head_k' local variable possesses the same name as one of the class members, which can result in a confusion.",
+      "positions": [
+        {
+          "endLine": 13714,
+          "file": "/mnt/c/Users/sviridov/Test/llama.cpp/srcSym/llama.cpp",
+          "line": 13714,
+          "navigation": {
+            "columns": 0,
+            "currentLine": 1773483437,
+            "nextLine": 0,
+            "previousLine": 0
+          }
+        }
+      ],
+      "projects": [],
+      "sastId": "CERT-DCL01-C"
+    },
+    {
+      "code": "V688",
+      "cwe": 0,
+      "falseAlarm": false,
+      "favorite": false,
+      "level": 2,
+      "message": "The 'n_tokens' local variable possesses the same name as one of the class members, which can result in a confusion.",
+      "positions": [
+        {
+          "endLine": 14179,
+          "file": "/mnt/c/Users/sviridov/Test/llama.cpp/srcSym/llama.cpp",
+          "line": 14179,
+          "navigation": {
+            "columns": 0,
+            "currentLine": 1893209484,
+            "nextLine": 0,
+            "previousLine": -1560262410
+          }
+        }
+      ],
+      "projects": [],
+      "sastId": "CERT-DCL01-C"
+    },
+    {
+      "code": "V688",
+      "cwe": 0,
+      "falseAlarm": false,
+      "favorite": false,
+      "level": 2,
+      "message": "The 'n_tokens' local variable possesses the same name as one of the class members, which can result in a confusion.",
+      "positions": [
+        {
+          "endLine": 14307,
+          "file": "/mnt/c/Users/sviridov/Test/llama.cpp/srcSym/llama.cpp",
+          "line": 14307,
+          "navigation": {
+            "columns": 0,
+            "currentLine": 1893209484,
+            "nextLine": 0,
+            "previousLine": -1560262410
+          }
+        }
+      ],
+      "projects": [],
+      "sastId": "CERT-DCL01-C"
+    },
+    {
+      "code": "V688",
+      "cwe": 0,
+      "falseAlarm": false,
+      "favorite": false,
+      "level": 2,
+      "message": "The 'n_head' local variable possesses the same name as one of the class members, which can result in a confusion.",
+      "positions": [
+        {
+          "endLine": 14444,
+          "file": "/mnt/c/Users/sviridov/Test/llama.cpp/srcSym/llama.cpp",
+          "line": 14444,
+          "navigation": {
+            "columns": 0,
+            "currentLine": 214098128,
+            "nextLine": -518694446,
+            "previousLine": -907775547
+          }
+        }
+      ],
+      "projects": [],
+      "sastId": "CERT-DCL01-C"
+    },
+    {
+      "code": "V688",
+      "cwe": 0,
+      "falseAlarm": false,
+      "favorite": false,
+      "level": 2,
+      "message": "The 'n_head_kv' local variable possesses the same name as one of the class members, which can result in a confusion.",
+      "positions": [
+        {
+          "endLine": 14445,
+          "file": "/mnt/c/Users/sviridov/Test/llama.cpp/srcSym/llama.cpp",
+          "line": 14445,
+          "navigation": {
+            "columns": 0,
+            "currentLine": -518694446,
+            "nextLine": -85506769,
+            "previousLine": 214098128
+          }
+        }
+      ],
+      "projects": [],
+      "sastId": "CERT-DCL01-C"
+    },
+    {
+      "code": "V688",
+      "cwe": 0,
+      "falseAlarm": false,
+      "favorite": false,
+      "level": 2,
+      "message": "The 'n_tokens' local variable possesses the same name as one of the class members, which can result in a confusion.",
+      "positions": [
+        {
+          "endLine": 14698,
+          "file": "/mnt/c/Users/sviridov/Test/llama.cpp/srcSym/llama.cpp",
+          "line": 14698,
+          "navigation": {
+            "columns": 0,
+            "currentLine": 1893209484,
+            "nextLine": 0,
+            "previousLine": -1560262410
+          }
+        }
+      ],
+      "projects": [],
+      "sastId": "CERT-DCL01-C"
+    },
+    {
+      "code": "V688",
+      "cwe": 0,
+      "falseAlarm": false,
+      "favorite": false,
+      "level": 2,
+      "message": "The 'n_tokens' local variable possesses the same name as one of the class members, which can result in a confusion.",
+      "positions": [
+        {
+          "endLine": 14830,
+          "file": "/mnt/c/Users/sviridov/Test/llama.cpp/srcSym/llama.cpp",
+          "line": 14830,
+          "navigation": {
+            "columns": 0,
+            "currentLine": 1893209484,
+            "nextLine": 0,
+            "previousLine": -1560262410
+          }
+        }
+      ],
+      "projects": [],
+      "sastId": "CERT-DCL01-C"
+    },
+    {
+      "code": "V688",
+      "cwe": 0,
+      "falseAlarm": false,
+      "favorite": false,
+      "level": 2,
+      "message": "The 'n_tokens' local variable possesses the same name as one of the class members, which can result in a confusion.",
+      "positions": [
+        {
+          "endLine": 15208,
+          "file": "/mnt/c/Users/sviridov/Test/llama.cpp/srcSym/llama.cpp",
+          "line": 15208,
+          "navigation": {
+            "columns": 0,
+            "currentLine": 1893209484,
+            "nextLine": 0,
+            "previousLine": -1560262410
+          }
+        }
+      ],
+      "projects": [],
+      "sastId": "CERT-DCL01-C"
+    },
+    {
+      "code": "V688",
+      "cwe": 0,
+      "falseAlarm": false,
+      "favorite": false,
+      "level": 2,
+      "message": "The 'n_tokens' local variable possesses the same name as one of the class members, which can result in a confusion.",
+      "positions": [
+        {
+          "endLine": 15340,
+          "file": "/mnt/c/Users/sviridov/Test/llama.cpp/srcSym/llama.cpp",
+          "line": 15340,
+          "navigation": {
+            "columns": 0,
+            "currentLine": 1893209484,
+            "nextLine": 0,
+            "previousLine": -1560262410
+          }
+        }
+      ],
+      "projects": [],
+      "sastId": "CERT-DCL01-C"
+    },
+    {
+      "code": "V688",
+      "cwe": 0,
+      "falseAlarm": false,
+      "favorite": false,
+      "level": 2,
+      "message": "The 'n_tokens' local variable possesses the same name as one of the class members, which can result in a confusion.",
+      "positions": [
+        {
+          "endLine": 15872,
+          "file": "/mnt/c/Users/sviridov/Test/llama.cpp/srcSym/llama.cpp",
+          "line": 15872,
+          "navigation": {
+            "columns": 0,
+            "currentLine": 1893209484,
+            "nextLine": 0,
+            "previousLine": -1560262410
+          }
+        }
+      ],
+      "projects": [],
+      "sastId": "CERT-DCL01-C"
+    },
+    {
+      "code": "V688",
+      "cwe": 0,
+      "falseAlarm": false,
+      "favorite": false,
+      "level": 2,
+      "message": "The 'n_tokens' local variable possesses the same name as one of the class members, which can result in a confusion.",
+      "positions": [
+        {
+          "endLine": 16003,
+          "file": "/mnt/c/Users/sviridov/Test/llama.cpp/srcSym/llama.cpp",
+          "line": 16003,
+          "navigation": {
+            "columns": 0,
+            "currentLine": 1088213949,
+            "nextLine": 504026865,
+            "previousLine": -1513147171
+          }
+        }
+      ],
+      "projects": [],
+      "sastId": "CERT-DCL01-C"
+    },
+    {
+      "code": "V688",
+      "cwe": 0,
+      "falseAlarm": false,
+      "favorite": false,
+      "level": 2,
+      "message": "The 'n_tokens' local variable possesses the same name as one of the class members, which can result in a confusion.",
+      "positions": [
+        {
+          "endLine": 16116,
+          "file": "/mnt/c/Users/sviridov/Test/llama.cpp/srcSym/llama.cpp",
+          "line": 16116,
+          "navigation": {
+            "columns": 0,
+            "currentLine": 1893209484,
+            "nextLine": 0,
+            "previousLine": -1560262410
+          }
+        }
+      ],
+      "projects": [],
+      "sastId": "CERT-DCL01-C"
+    },
+    {
+      "code": "V728",
+      "cwe": 0,
+      "falseAlarm": false,
+      "favorite": false,
+      "level": 2,
+      "message": "An excessive check can be simplified. The '(A && !B) || (!A && B)' expression is equivalent to the 'bool(A) != bool(B)' expression.",
+      "positions": [
+        {
+          "endLine": 17164,
+          "file": "/mnt/c/Users/sviridov/Test/llama.cpp/srcSym/llama.cpp",
+          "line": 17164,
+          "navigation": {
+            "columns": 0,
+            "currentLine": 1193734176,
             "nextLine": 0,
             "previousLine": 0
           }
@@ -4571,23 +5263,301 @@
       "sastId": ""
     },
     {
-      "code": "V008",
+      "code": "V728",
       "cwe": 0,
       "falseAlarm": false,
       "favorite": false,
-      "level": 0,
-      "message": "Unable to start the analysis on this file.",
+      "level": 2,
+      "message": "An excessive check can be simplified. The '(A && !B) || (!A && B)' expression is equivalent to the 'bool(A) != bool(B)' expression.",
       "positions": [
         {
-          "endLine": 1,
-          "file": "/mnt/c/Users/sviridov/Test/llama.cpp/src/llama.cpp",
-          "line": 1,
+          "endLine": 17479,
+          "file": "/mnt/c/Users/sviridov/Test/llama.cpp/srcSym/llama.cpp",
+          "line": 17479,
           "navigation": {
             "columns": 0,
-            "currentLine": 0,
+            "currentLine": -2115833139,
             "nextLine": 0,
             "previousLine": 0
           }
+        }
+      ],
+      "projects": [],
+      "sastId": ""
+    },
+    {
+      "code": "V730",
+      "cwe": 457,
+      "falseAlarm": false,
+      "favorite": false,
+      "level": 2,
+      "message": "Not all members of a class are initialized inside the constructor. Consider inspecting: value.",
+      "positions": [
+        {
+          "endLine": 1695,
+          "file": "/mnt/c/Users/sviridov/Test/llama.cpp/srcSym/llama.cpp",
+          "line": 1695,
+          "navigation": {
+            "columns": 0,
+            "currentLine": 598411123,
+            "nextLine": 193,
+            "previousLine": 8085
+          }
+        }
+      ],
+      "projects": [],
+      "sastId": "CERT-EXP53-CPP"
+    },
+    {
+      "code": "V730",
+      "cwe": 457,
+      "falseAlarm": false,
+      "favorite": false,
+      "level": 2,
+      "message": "Not all members of a class are initialized inside the compiler generated constructor. Consider inspecting: n_tokens, n_embd, logits_all.",
+      "positions": [
+        {
+          "endLine": 2954,
+          "file": "/mnt/c/Users/sviridov/Test/llama.cpp/srcSym/llama.cpp",
+          "line": 2954,
+          "navigation": {
+            "columns": 0,
+            "currentLine": 25060503,
+            "nextLine": 188401782,
+            "previousLine": 931902987
+          }
+        }
+      ],
+      "projects": [],
+      "sastId": "CERT-EXP53-CPP"
+    },
+    {
+      "code": "V756",
+      "cwe": 0,
+      "falseAlarm": false,
+      "favorite": false,
+      "level": 2,
+      "message": "The 'j' counter is not used inside a nested loop. Consider inspecting usage of 'i' counter.",
+      "positions": [
+        {
+          "endLine": 20547,
+          "file": "/mnt/c/Users/sviridov/Test/llama.cpp/srcSym/llama.cpp",
+          "line": 20547,
+          "navigation": {
+            "columns": 0,
+            "currentLine": -103649121,
+            "nextLine": -1521019492,
+            "previousLine": 0
+          }
+        },
+        {
+          "endLine": 20558,
+          "file": "/mnt/c/Users/sviridov/Test/llama.cpp/srcSym/llama.cpp",
+          "line": 20558
+        }
+      ],
+      "projects": [],
+      "sastId": ""
+    },
+    {
+      "code": "V1023",
+      "cwe": 460,
+      "falseAlarm": false,
+      "favorite": false,
+      "level": 2,
+      "message": "A pointer without owner is added to the 'files' container by the 'emplace_back' method. A memory leak will occur in case of an exception.",
+      "positions": [
+        {
+          "endLine": 4424,
+          "file": "/mnt/c/Users/sviridov/Test/llama.cpp/srcSym/llama.cpp",
+          "line": 4424,
+          "navigation": {
+            "columns": 0,
+            "currentLine": 119874765,
+            "nextLine": 346868568,
+            "previousLine": 0
+          }
+        }
+      ],
+      "projects": [],
+      "sastId": "CERT-ERR56-CPP"
+    },
+    {
+      "code": "V1023",
+      "cwe": 460,
+      "falseAlarm": false,
+      "favorite": false,
+      "level": 2,
+      "message": "A pointer without owner is added to the 'files' container by the 'emplace_back' method. A memory leak will occur in case of an exception.",
+      "positions": [
+        {
+          "endLine": 4466,
+          "file": "/mnt/c/Users/sviridov/Test/llama.cpp/srcSym/llama.cpp",
+          "line": 4466,
+          "navigation": {
+            "columns": 0,
+            "currentLine": 13780323,
+            "nextLine": 346868568,
+            "previousLine": 0
+          }
+        }
+      ],
+      "projects": [],
+      "sastId": "CERT-ERR56-CPP"
+    },
+    {
+      "code": "V1023",
+      "cwe": 460,
+      "falseAlarm": false,
+      "favorite": false,
+      "level": 2,
+      "message": "A pointer without owner is added to the 'model.mlock_bufs' container by the 'emplace_back' method. A memory leak will occur in case of an exception.",
+      "positions": [
+        {
+          "endLine": 9017,
+          "file": "/mnt/c/Users/sviridov/Test/llama.cpp/srcSym/llama.cpp",
+          "line": 9017,
+          "navigation": {
+            "columns": 0,
+            "currentLine": 1716991110,
+            "nextLine": -1042563118,
+            "previousLine": 1448326302
+          }
+        }
+      ],
+      "projects": [],
+      "sastId": "CERT-ERR56-CPP"
+    },
+    {
+      "code": "V1037",
+      "cwe": 691,
+      "falseAlarm": false,
+      "favorite": false,
+      "level": 2,
+      "message": "Two or more case-branches perform the same actions. Check lines: 7421, 8091, 8274",
+      "positions": [
+        {
+          "endLine": 7421,
+          "file": "/mnt/c/Users/sviridov/Test/llama.cpp/srcSym/llama.cpp",
+          "line": 7421,
+          "navigation": {
+            "columns": 0,
+            "currentLine": 1875886766,
+            "nextLine": 123,
+            "previousLine": 123
+          }
+        },
+        {
+          "endLine": 8091,
+          "file": "/mnt/c/Users/sviridov/Test/llama.cpp/srcSym/llama.cpp",
+          "line": 8091
+        },
+        {
+          "endLine": 8274,
+          "file": "/mnt/c/Users/sviridov/Test/llama.cpp/srcSym/llama.cpp",
+          "line": 8274
+        }
+      ],
+      "projects": [],
+      "sastId": ""
+    },
+    {
+      "code": "V1037",
+      "cwe": 691,
+      "falseAlarm": false,
+      "favorite": false,
+      "level": 2,
+      "message": "Two or more case-branches perform the same actions. Check lines: 8025, 8435",
+      "positions": [
+        {
+          "endLine": 8025,
+          "file": "/mnt/c/Users/sviridov/Test/llama.cpp/srcSym/llama.cpp",
+          "line": 8025,
+          "navigation": {
+            "columns": 0,
+            "currentLine": 1875886766,
+            "nextLine": 0,
+            "previousLine": 123
+          }
+        },
+        {
+          "endLine": 8435,
+          "file": "/mnt/c/Users/sviridov/Test/llama.cpp/srcSym/llama.cpp",
+          "line": 8435
+        }
+      ],
+      "projects": [],
+      "sastId": ""
+    },
+    {
+      "code": "V1044",
+      "cwe": 834,
+      "falseAlarm": false,
+      "favorite": false,
+      "level": 2,
+      "message": "Loop break conditions do not depend on the number of iterations.",
+      "positions": [
+        {
+          "endLine": 19162,
+          "file": "/mnt/c/Users/sviridov/Test/llama.cpp/srcSym/llama.cpp",
+          "line": 19162,
+          "navigation": {
+            "columns": 0,
+            "currentLine": 1094648181,
+            "nextLine": -66088923,
+            "previousLine": 1170637117
+          }
+        }
+      ],
+      "projects": [],
+      "sastId": ""
+    },
+    {
+      "code": "V1048",
+      "cwe": 1164,
+      "falseAlarm": false,
+      "favorite": false,
+      "level": 2,
+      "message": "The 'token_data.attr' variable was assigned the same value.",
+      "positions": [
+        {
+          "endLine": 6489,
+          "file": "/mnt/c/Users/sviridov/Test/llama.cpp/srcSym/llama.cpp",
+          "line": 6489,
+          "navigation": {
+            "columns": 0,
+            "currentLine": -292463049,
+            "nextLine": 1279304888,
+            "previousLine": -284637641
+          }
+        }
+      ],
+      "projects": [],
+      "sastId": ""
+    },
+    {
+      "code": "V1051",
+      "cwe": 754,
+      "falseAlarm": false,
+      "favorite": false,
+      "level": 2,
+      "message": "Consider checking for misprints. It's possible that the 'block_size_bytes' should be checked here.",
+      "positions": [
+        {
+          "endLine": 17983,
+          "file": "/mnt/c/Users/sviridov/Test/llama.cpp/srcSym/llama.cpp",
+          "line": 17983,
+          "navigation": {
+            "columns": 0,
+            "currentLine": -1342690637,
+            "nextLine": 387961738,
+            "previousLine": 0
+          }
+        },
+        {
+          "endLine": 17981,
+          "file": "/mnt/c/Users/sviridov/Test/llama.cpp/srcSym/llama.cpp",
+          "line": 17981
         }
       ],
       "projects": [],
@@ -4675,7 +5645,7 @@
       "positions": [
         {
           "endLine": 4393,
-          "file": "/mnt/c/Users/sviridov/Test/llama.cpp/stb_image.h",
+          "file": "/mnt/c/Users/sviridov/Test/llama.cpp/common/stb_image.h",
           "line": 4393,
           "navigation": {
             "columns": 0,
@@ -4701,7 +5671,7 @@
       "positions": [
         {
           "endLine": 4034,
-          "file": "/mnt/c/Users/sviridov/Test/llama.cpp/stb_image.h",
+          "file": "/mnt/c/Users/sviridov/Test/llama.cpp/common/stb_image.h",
           "line": 4034,
           "navigation": {
             "columns": 0,
@@ -9044,29 +10014,6 @@
       ],
       "projects": [],
       "sastId": "CERT-ERR56-CPP"
-    },
-    {
-      "code": "V008",
-      "cwe": 0,
-      "falseAlarm": false,
-      "favorite": false,
-      "level": 0,
-      "message": "Unable to start the analysis on this file.",
-      "positions": [
-        {
-          "endLine": 1,
-          "file": "/mnt/c/Users/sviridov/Test/llama.cpp/tests/test-c.c",
-          "line": 1,
-          "navigation": {
-            "columns": 0,
-            "currentLine": 0,
-            "nextLine": 0,
-            "previousLine": 0
-          }
-        }
-      ],
-      "projects": [],
-      "sastId": ""
     },
     {
       "code": "V767",
